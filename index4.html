@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h1 id ="title">ずんだまるの修行</h1>
+    <form name="form">
+      <input name="text" type="text" />
+      <input type="button" value="送信" onclick="OnButtonClick();"/><br />
+    </form>
+    <div id="output"></div>
+
+
+    <script language="javascript" type="text/javascript">
+      function OnButtonClick() {
+        target = document.getElementById("output");
+        target.innerHTML = document.form.text.value ;
+      }
+    </script>
+  </body>
+<html>
